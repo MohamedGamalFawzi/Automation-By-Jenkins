@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/mohamed-atef2022/depi-project.git'
+                    url: 'https://github.com/MohamedGamalFawzi/Automation-By-Jenkins.git'
             }
         }
 
