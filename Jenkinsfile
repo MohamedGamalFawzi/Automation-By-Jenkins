@@ -8,12 +8,6 @@ pipeline {
                     url: 'https://github.com/MohamedGamalFawzi/Automation-By-Jenkins.git'
             }
         }
-        stage('Verify Docker Inside Jenkins') {
-            steps {
-                sh 'docker --version'
-                sh 'docker ps'
-            }
-        }
 
         stage('Build') {
             steps {
