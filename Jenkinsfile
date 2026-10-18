@@ -19,7 +19,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
                     sh 'echo $PASS | docker login -u $USER --password-stdin'
-                    sh 'docker push mogamalfawzy/nginx-lab:$BUILD_NUMBER'
+                    sh 'docker push mogamalfawzy/nginx-lab:v1.$BUILD_NUMBER'
                 }
             }
         }
