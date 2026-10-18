@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'docker build -t mogamalfawzy/nginx-lab:$BUILD_NUMBER .'
+                sh 'docker build -t mogamalfawzy/nginx-lab:v1.$BUILD_NUMBER .'
             }
         }
 
